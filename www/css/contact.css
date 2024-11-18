@@ -1,0 +1,92 @@
+.Container {
+    background-color: #F9D773;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: auto;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.Container titulo {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Container p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Container div{
+    max-width: 600px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}   
+
+.label {
+    font-size: 14px;
+    color: #B56576;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #B56576;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.Send {
+    background-color: transparent;
+    color: #333; /* Adjust text color as needed */
+    border: 2px solid #B56576; /* Border color and thickness */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.Send:hover {
+    background-color: rgba(53, 250, 122, 0.3); /* Light background on hover */
+    border: 2px solid rgb(53, 250, 122);
+}
+
+.Send:active {
+    background-color: rgb(53, 250, 122); 
+}
