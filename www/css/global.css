@@ -37,6 +37,11 @@ a {
     list-style-type: none;
 }
 
+.active {
+    color: #B56576;
+}
+
+
 .nav-links li a {
     padding: 5px 10px;
     color: #5A4E4D;
@@ -47,6 +52,8 @@ a {
     color: #8A9A5B;
 }
 
+
+
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -55,7 +62,6 @@ a {
     color: #5A4E4D;
     cursor: pointer;
 }
-
 
 /* Footer */
 footer {

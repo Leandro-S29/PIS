@@ -71,21 +71,35 @@
     transform: scale(1.05);
 }
 
-.recipe-card img {
+.recipe-card .foto {
     width: 100%;
     border-radius: 8px;
 }
 
-.recipe-card h3 {
+.recipe-card .nome {
     margin: 15px 0 10px;
     color: #5A4E4D;
 }
 
-.recipe-card p {
+.recipe-card .descricao {
     color: #3D2F2F;
     font-size: 14px;
 }
+.recipe-card .icon-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: auto;
+    margin-top: 10px;
+}
 
+
+.recipe-card .icon {  
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+}
 
 
 /* Responsive Design */
