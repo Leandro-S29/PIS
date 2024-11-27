@@ -13,18 +13,20 @@ function displayCategories(categories) { // Fixed capitalization
     CategoriesGrid.innerHTML = ''; // Clear existing content
 
     categories.forEach(category => { // Adjusted naming for clarity
-        const CategoriesCard = document.createElement('div');
-        CategoriesCard.classList.add('Categories-card');
+        const CategoriesButton = document.createElement('button');
+        CategoriesButton.classList.add('Categories-button');
 
-        CategoriesCard.innerHTML = `
-            <h3 class="nome">${category.strCategory}</h3>
-            <img src="${category.strCategoryThumb}" alt="${category.strCategory}" />
+        CategoriesButton.innerHTML = `
+            <h5 class="nome">${category.strCategory}</h5>
          
             
         `;
-
-        CategoriesGrid.appendChild(CategoriesCard);
+        CategoriesButton.addEventListener('click', () => fetchRecipesByCategory(category.strCategory));
+        CategoriesGrid.appendChild(CategoriesButton);
     });
 }
 
+
+
+// Initialize by fetching categories when the page loads
 document.addEventListener('DOMContentLoaded', fetchCategories);
