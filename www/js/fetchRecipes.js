@@ -23,13 +23,16 @@ function displayRecipes(recipes) {
         recipeCard.classList.add('recipe-card');
 
         recipeCard.innerHTML = `
-            <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}">
-            <h3>${recipe.strMeal}</h3>
-            <p>${recipe.strInstructions.substring(0, 100)}...</p>
+            <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" class="foto">
+                <h3 class="nome">${recipe.strMeal}</h3>   
+                <p class="descricao">${recipe.strInstructions.substring(0, 100)}...</p>
+                <div class="icon-container">
+                <img src="../images/Coracaovazio.svg" alt="svg" class="icon">
+                </div>
         `;
 
         recipeGrid.appendChild(recipeCard);
     });
 }
 
-document.addEventListener('DOMContentLoaded', fetchRecipes);
+document.addEventListener('DOMContentLoaded', fetchRecipes);    

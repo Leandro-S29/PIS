@@ -1,0 +1,35 @@
+.Categories{
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.Categories-grid{
+    background-color: #F9D773;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Categories-button{
+    background-color: #FFF5E1;
+  
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+.Categories-button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.Categories-button .nome{
+    margin: 15px 0 10px;
+    color: #5A4E4D;
+}
