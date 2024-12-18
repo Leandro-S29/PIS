@@ -15,19 +15,19 @@ Welcome to **RecipeNest** — your one-stop solution for discovering, sharing, a
 
 RecipeNest leverages the following technologies:
 
-- **Backend**: [Node.js] (https://nodejs.org/) | [Javascript] .
+- **Backend**: [Node.js](https://nodejs.org/) | [Javascript] .
 - **Frontend**: [HTML].
 - **Database**: [MySQL](https://www.mysql.com).
 - **Authentication**: [Salt](Self-Hosted and encrypted Authenticator).
-- **API Integration**: [The Meal DB] (https://www.themealdb.com).
-- **Styling**: [CSS](Custom CSS for an elegant UI).
+- **API Integration**: [The Meal DB](https://www.themealdb.com).
+- **Styling**: Custom CSS for an elegant UI.
 
 ## Installation
 
 Follow these steps to set up RecipeNest locally:
 
 1. Clone the repository:
-   ```bash
+   ```
    git clone https://github.com/Leandro-S29/PIS.git
    cd recipenest
    ```
@@ -56,8 +56,8 @@ Follow these steps to set up RecipeNest locally:
 4. **Save Favorites**: Click the heart icon to save recipes you love.
 
 ## Creators
-- Leandro Santos | IPS Student
-- Guilherme Soares | IPS Student
+- **Leandro Santos** | IPS Student
+- **Guilherme Soares** | IPS Student
 
 ---
 
