@@ -13,9 +13,16 @@ async function updateNavbar() {
         const getStartedButton = document.getElementById('getStartedButton');
 
         if (result.loggedIn) {
+            if (result.username === 'admin') {
+                const adminLink = document.createElement('li');
+                adminLink.innerHTML = '<a href="/html/adminPage.html">Admin Page</a>';
+                navLinks.appendChild(adminLink);
+            }
+
             const logoutLink = document.createElement('li');
             logoutLink.innerHTML = '<a href="#" onclick="logout()">Logout</a>';
             navLinks.appendChild(logoutLink);
+
             if (getStartedButton) {
                 getStartedButton.style.display = 'none';
             }
@@ -43,6 +50,8 @@ async function logout() {
         console.error('Error logging out:', err);
     }
 }
+
+
 
 // Call updateNavbar on page load
 document.addEventListener('DOMContentLoaded', updateNavbar);
