@@ -75,3 +75,21 @@ CREATE TABLE collection_recipes (
     FOREIGN KEY (collection_id) REFERENCES collections(collection_id),
     FOREIGN KEY (recipe_id) REFERENCES recipes(recipe_id)
 );
+
+-- Insert Recipe Categories
+INSERT INTO recipe_categories (category_id, name) VALUES
+(1, 'Beef'),
+(2, 'Breakfast'),
+(3, 'Chicken'),
+(4, 'Dessert'),
+(5, 'Goat'),
+(6, 'Lamb'),
+(7, 'Miscellaneous'),
+(8, 'Pasta'),
+(9, 'Pork'),
+(10, 'Seafood'),
+(11, 'Side'),
+(12, 'Starter'),
+(13, 'Vegan'),
+(14, 'Vegetarian');
+
