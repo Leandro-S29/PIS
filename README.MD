@@ -15,10 +15,10 @@ Welcome to **RecipeNest** — your one-stop solution for discovering, sharing, a
 
 RecipeNest leverages the following technologies:
 
-- **Backend**: [Node.js](https://nodejs.org/) | [Javascript] .
+- **Backend**: [Node.js](https://nodejs.org/) | Javascript .
 - **Frontend**: [HTML].
 - **Database**: [MySQL](https://www.mysql.com).
-- **Authentication**: [Salt](Self-Hosted and encrypted Authenticator).
+- **Authentication**: Self-Hosted and encrypted Authenticator.
 - **API Integration**: [The Meal DB](https://www.themealdb.com).
 - **Styling**: Custom CSS for an elegant UI.
 
