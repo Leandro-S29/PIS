@@ -1,3 +1,4 @@
+// app.js
 // Import required modules
 const express = require('express');
 const path = require('path');
@@ -17,7 +18,6 @@ const port = settings.server.port;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 app.use(express.static(path.join(__dirname, 'www')));
-
 
 // Configure session middleware
 app.use(session({
