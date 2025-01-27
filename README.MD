@@ -1,14 +1,14 @@
 # RecipeNest 
 
-Welcome to **RecipeNest** — your one-stop solution for discovering, sharing, and managing culinary recipes! This Node.js-powered web application allows users to explore a world of delightful recipes and add their own culinary creations to the mix.
+Welcome to **RecipeNest** — your one-stop solution for discovering, sharing, and managing culinary recipes! We want users to explore a world of delightful recipes and add their own culinary creations to the mix.
 
 ## Features
 
 - **User-Friendly Interface**: An intuitive design to browse, search, and add recipes effortlessly.
 - **Recipe Categories**: Organize recipes by cuisines, meal types, or dietary preferences.
-- **Community Contributions**: Share your favorite recipes and learn from others. (On Going/Not implement yet)
+- **Community Contributions**: Share your favorite recipes and learn from others. (**On Going/Not implement yet**)
 - **Favorites**: Save and revisit your favorite recipes anytime.
-- **Ingredient-Based Search**: Find recipes based on your favorite types of food.
+- **Category-Based Search**: Find recipes based on your favorite types of food.
 - **Secure Authentication**: Sign up, log in in your profile with ease.
 
 ## Tech Stack
