@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main Info -->
+    <link rel="icon" href="../images/LogoColored.png" type="image/x-icon">
+    <title>RecipeNest </title>
+    <meta name="description" content="A cozy, organized space for all your recipes.">
+    <meta name="author" content="Leandro e Guilherme">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/Recipes.css">
+    <link rel="stylesheet" href="../css/logres.css">
+    <link rel="stylesheet" href="../css/favorites.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">RecipeNest</h1> 
+            <ul class="nav-links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/Recipes.html">Recipes</a></li>
+                <li><a href="/html/favorites.html" class="active">Favorites</a></li>
+                <li><a href="/html/Contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="collections-section">
+            <h2 class="collections-TitlePage">Your Collections</h2>
+            <div class="collections-grid" id="collectionsGrid">
+            </div>
+            <div class="add-collection">
+                <input type="text" id="newCollectionName" placeholder="New Collection Name">
+                <input type="text" id="newCollectionDescription" placeholder="New Collection Description">
+                <button onclick="createCollection()">Create</button>
+            </div>
+        </section>
+
+        <section class="favorites-section">
+            <h2 class="favorites-TitlePage">Favorited Recipes</h2>
+            <div class="favorites-grid" id="favoritesGrid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 RecipeNest. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/selfupdate.js"></script>
+    <script src="../js/logrespopup.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/FavPage.js"></script>
+</body>
+</html>

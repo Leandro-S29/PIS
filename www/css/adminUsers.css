@@ -1,0 +1,83 @@
+.user-list-panel {
+    display: block;
+}
+
+.edit-user-panel {
+    display:block;
+}
+
+.user-card {
+    background: #FFF5E1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    text-align: left;
+}
+
+.user-actions button {
+    background-color: #B56576;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.user-actions button:hover {
+    background-color: #8A9A5B;
+}
+
+.hidden {
+    display: none;
+}
+
+.edit-user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-user-form label {
+    font-size: 14px;
+    color: #5A4E4D;
+}
+
+.edit-user-form input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #B56576;
+}
+
+.edit-user-form .auth-button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #B56576;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-user-form .auth-button:hover {
+    background-color: #8A9A5B;
+}
+
+.edit-user-form .cancel-button {
+    background-color: #F9D773;
+}
+
+.edit-user-form .cancel-button:hover {
+    background-color: #E8C55C;
+}

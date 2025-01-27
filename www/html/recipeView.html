@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/LogoColored.png" type="image/x-icon">
+    <title>RecipeNest</title>
+    <meta name="description" content="A cozy, organized space for all your recipes.">
+    <meta name="author" content="Leandro e Guilherme">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/recipeView.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">RecipeNest</h1>
+            <ul class="nav-links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/Recipes.html">Recipes</a></li>
+                <li><a href="/html/favorites.html">Favorites</a></li>
+                <li><a href="/html/Contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="recipe-details">
+            <h1 class="recipe-title"></h1>
+            <img class="recipe-image" src="" alt="Recipe Image">
+            <p class="recipe-description"></p>
+            <h3>Details</h3>
+            <p class="recipe-prep-time"></p>
+            <p class="recipe-difficulty"></p>
+            <p class="recipe-price"></p>
+            <p class="recipe-ingredients"></p>
+            <p class="recipe-category"></p>
+            <p class="recipe-author"></p>
+            <p class="recipe-created-at"></p>
+            <h3>Instructions</h3>
+            <p class="recipe-instructions"></p>
+            <p class="collection-dropbox">
+                <label for="collectionSelect"></label>
+                <select id="collectionSelect">
+                    <option value="">Select a collection</option>
+                </select>
+            </p>
+            <button class="AddRecipeCollection-button" onclick="addRecipeCollection()">Add To Collection</button>
+        </section>
+    </main>
+
+    <script src="../js/soloRecipeView.js"></script>
+    <script src="../js/selfupdate.js"></script>
+    <script src="../js/navbar.js"></script>
+
+    <footer>
+        <p>© 2024 RecipeNest. All rights reserved.</p>
+    </footer>
+</body>
+</html>

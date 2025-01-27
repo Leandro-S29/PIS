@@ -1,0 +1,126 @@
+.instruction-list-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+.instruction-list{
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: border-box;
+}
+
+.edit-instruction-panel,
+.add-instruction-panel {
+    display:block;
+}
+
+.instruction-card {
+    background: #FFF5E1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.instruction-info {
+    text-align: left;
+    max-width: 50%;
+}
+
+
+.instruction-actions button {
+    background-color: #B56576;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+
+.instruction-actions button:hover {
+    background-color: #8A9A5B;
+}
+
+.hidden {
+    display: none;
+}
+
+.edit-instruction-form,
+.add-instruction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-instruction-form label,
+.add-instruction-form label {
+    font-size: 14px;
+    color: #5A4E4D;
+}
+
+.edit-instruction-form input,
+.add-instruction-form input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #B56576;
+}
+
+.edit-instruction-form .auth-button,
+.add-instruction-form .auth-button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #B56576;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-instruction-form .auth-button:hover,
+.add-instruction-form .auth-button:hover {
+    background-color: #8A9A5B;
+}
+
+.edit-instruction-form .cancel-button,
+.add-instruction-form .cancel-button {
+    background-color: #F9D773;
+}
+
+.edit-instruction-form .cancel-button:hover,
+.add-instruction-form .cancel-button:hover {
+    background-color: #E8C55C;
+}
+
+.add-instruction-button,
+.confirm {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-instruction-button:hover,
+.confirm:hover {
+    background-color: #45A049;
+    transform: scale(1.05);
+}
+   
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Categories</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/adminRecipes.css">
+    <link rel="icon" href="../images/LogoColored.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">RecipeNest</h1> 
+            <ul class="nav-links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/Recipes.html">Recipes</a></li>
+                <li><a href="/html/favorites.html">Favorites</a></li>
+                <li><a href="/html/Contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-panel recipe-list-panel">
+            <h2>Manage Recipes</h2>
+            <p>View, edit, and delete Recipes from the platform.</p>
+            <button class="add-recipe-button" onclick="AddRecipe()">+</button> 
+            <div class="recipe-list">
+            </div>
+        </section>
+
+        <section class="admin-panel edit-recipe-panel hidden">
+            <h2>
+                <form id="editRecipeForm" class="edit-recipe-form "> 
+                    <label for="editRecipeName"> Recipe Name: </label>
+                    <input type="text" id="editRecipeName" name="name" required>
+                    <!--autor-->
+                    <label for="editRecipeAuthor"> Recipe Author: </label>
+                    <input type="text" id="editRecipeAuthor" name="Author" required>
+                    
+                    <!--Descriçao-->
+                    <label for="editRecipeDescription"> Recipe Description: </label>
+                    <input type="text" id="editRecipeDescription" name="Description" required>
+                    
+                    <!--dificuldade-->
+                    <label for="editRecipedifficulty"> Recipe difficulty: </label>
+                    <input type="text" id="editRecipedifficulty" name="difficulty" required>
+                    
+                    <!--Categoria-->
+                    <label for="editRecipeCategory"> Recipe Category: </label>
+                    <input type="text" id="editRecipeCategory" name="Category" required>
+
+                    <!--prep time-->
+                    <label for="editRecipeTime"> Recipe Time: </label>
+                    <input type="text" id="editRecipeTime" name="Time" required>
+
+                    <!--preco-->
+                    <label for="editRecipePreco"> Preço: </label>
+                    <input type="text" id="editRecipePreco" name="Preco" required>
+
+                  
+                <button type="submit" class="auth-button">  Continue </button>
+                    <button type="button" class="auth-button cancel-button" onclick="cancelEdit()">Cancel</button>
+                </form>
+            </h2>
+        </section>
+
+        <section class="admin-panel add-recipe-panel hidden">
+            <h2>Add New Category</h2>
+            <form id="addrecipeForm" class="add-recipe-form">
+
+                <label for="addrecipeForm">recipe Name:</label>
+                <input type="text" id="addrecipeForm" name="Name" required>
+
+                <label for="addrecipeForm">Author Name:</label>
+                <input type="text" id="addrecipeForm" name="Author" required>
+
+                <label for="addrecipeForm">recipe Description:</label>
+                <input type="text" id="addrecipeForm" name="Description" required>
+
+                <label for="addrecipeForm">recipe Difficulty:</label>
+                <input type="text" id="addrecipeForm" name="difficulty" required>
+
+                <label for="addrecipeForm">recipe Category:</label>
+                <input type="text" id="addrecipeForm" name="Category" required>
+
+                <label for="addrecipeForm">recipe Prep time:</label>
+                <input type="text" id="addrecipeForm" name="Time" required>
+
+                <label for="addrecipeForm">recipe Preco:</label>
+                <input type="text" id="addrecipeForm" name="Preco" required>
+
+                <label for="addrecipeForm">recipe Image:</label>
+                <input type="text" id="addrecipeForm" name="img" required>
+
+                <button type="submit" class="auth-button">Add recipe</button>
+                <button type="button" class="auth-button cancel-button" onclick="cancelAdd()">Cancel</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 RecipeNest. Admin Panel. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts --> 
+    <script src="../js/selfupdate.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/manageRecipes.js"></script>
+</body>
+</html>

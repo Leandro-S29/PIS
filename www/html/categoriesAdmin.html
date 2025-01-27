@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Categories</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/adminCategories.css">
+    <link rel="icon" href="../images/LogoColored.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">RecipeNest</h1> 
+            <ul class="nav-links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/Recipes.html">Recipes</a></li>
+                <li><a href="/html/favorites.html">Favorites</a></li>
+                <li><a href="/html/Contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-panel category-list-panel">
+            <h2>Manage Categories</h2>
+            <p>View, edit, and delete categories from the platform.</p>
+            <button class="add-category-button" onclick="showAddCategoryPanel()">+</button> 
+            <div class="category-list">
+            </div>
+        </section>
+
+        <section class="admin-panel edit-category-panel hidden">
+            <h2>Edit Category</h2>
+            <form id="editCategoryForm" class="edit-category-form">
+                <label for="editCategoryName">Category Name:</label>
+                <input type="text" id="editCategoryName" name="name" required>
+                <button type="submit" class="auth-button">Save Changes</button>
+                <button type="button" class="auth-button cancel-button" onclick="cancelEdit()">Cancel</button>
+            </form>
+        </section>
+
+        <section class="admin-panel add-category-panel hidden">
+            <h2>Add New Category</h2>
+            <form id="addCategoryForm" class="add-category-form">
+                <label for="addCategoryName">Category Name:</label>
+                <input type="text" id="addCategoryName" name="name" required>
+                <button type="submit" class="auth-button">Add Category</button>
+                <button type="button" class="auth-button cancel-button" onclick="cancelAdd()">Cancel</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 RecipeNest. Admin Panel. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts --> 
+    <script src="../js/selfupdate.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/manageCategories.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+.category-list-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.category-list {
+    flex: 1;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.edit-category-panel,
+.add-category-panel {
+    display: block;
+    box-sizing: border-box;
+}
+
+.category-card {
+    background: #FFF5E1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.category-info {
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.category-actions button {
+    background-color: #B56576;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.category-actions button:hover {
+    background-color: #8A9A5B;
+}
+
+.hidden {
+    display: none;
+}
+
+.edit-category-form,
+.add-category-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.edit-category-form label,
+.add-category-form label {
+    font-size: 14px;
+    color: #5A4E4D;
+    box-sizing: border-box;
+}
+
+.edit-category-form input,
+.add-category-form input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #B56576;
+    box-sizing: border-box;
+}
+
+.edit-category-form .auth-button,
+.add-category-form .auth-button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #B56576;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.edit-category-form .auth-button:hover,
+.add-category-form .auth-button:hover {
+    background-color: #8A9A5B;
+}
+
+.edit-category-form .cancel-button,
+.add-category-form .cancel-button {
+    background-color: #F9D773;
+    box-sizing: border-box;
+}
+
+.edit-category-form .cancel-button:hover,
+.add-category-form .cancel-button:hover {
+    background-color: #E8C55C;
+    box-sizing: border-box;
+}
+
+.add-category-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-category-button:hover {
+    background-color: #45A049;
+    transform: scale(1.05);
+}
+    

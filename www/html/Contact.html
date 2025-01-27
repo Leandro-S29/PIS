@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main Info -->
+    <link rel="icon" href="../images/LogoColored.png" type="image/x-icon">
+    <title>RecipeNest </title>
+    <meta name="description" content="A cozy, organized space for all your recipes.">
+    <meta name="author" content="Leandro e Guilherme">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/logres.css">
+    
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">RecipeNest</h1> 
+            <ul class="nav-links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/Recipes.html">Recipes</a></li>
+                <li><a href="/html/favorites.html">Favorites</a></li>
+                <li><a href="/html/Contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="form-container">
+                <h1 class="title">Have a Question or Something to Say?</h1>
+                <p>Let us know below (We love compliments 😊):</p>
+                <form action="https://formsubmit.co/gui.castro.soares@gmail.com" method="POST">
+                    <label for="topic" class="label">Topic:</label>    
+                    <input type="text" name="topic" id="topic" required/>
+                    <label for="message" class="label">Message:</label>    
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here:" required></textarea>
+                    <button type="submit" class="send">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 RecipeNest. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/selfupdate.js"></script>
+    <script src="../js/logrespopup.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

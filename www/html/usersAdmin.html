@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/adminUsers.css">
+    <link rel="icon" href="../images/LogoColored.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">RecipeNest</h1> 
+            <ul class="nav-links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/Recipes.html">Recipes</a></li>
+                <li><a href="/html/favorites.html">Favorites</a></li>
+                <li><a href="/html/Contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-panel user-list-panel">
+            <h2>Manage Users</h2>
+            <p>View, edit, and delete users from the platform.</p>
+            <div class="user-list">
+            </div>
+        </section>
+
+        <section class="admin-panel edit-user-panel hidden">
+            <h2>Edit User</h2>
+            <form id="editUserForm" class="edit-user-form">
+                <label for="editUsername">Username:</label>
+                <input type="text" id="editUsername" name="username" required>
+                <label for="editEmail">Email:</label>
+                <input type="email" id="editEmail" name="email" required>
+                <button type="submit" class="auth-button">Save Changes</button>
+                <button type="button" class="auth-button cancel-button" onclick="cancelEdit()">Cancel</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 RecipeNest. Admin Panel. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts --> 
+    <script src="../js/selfupdate.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/manageUsers.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+.recipe-details {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFF5E1;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe-title {
+    font-size: 32px;
+    color: #5A4E4D;
+    margin-bottom: 20px;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.recipe-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.recipe-instructions {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.recipe-prep-time,
+.recipe-difficulty,
+.recipe-price,
+.recipe-ingredients,
+.recipe-category,
+.recipe-author,
+.recipe-created-at {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.recipe-ingredients {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.recipe-instructions {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.recipe-details h3 {
+    font-size: 24px;
+    color: #5A4E4D;
+    margin-bottom: 10px;
+}
+
+.collection-dropbox {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.collection-dropbox label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.collection-dropbox select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #B56576;
+}
+
+.AddRecipeCollection-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #B56576;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.AddRecipeCollection-button:hover {
+    background-color: #8A9A5B;
+    transform: scale(1.05);
+}
+
+.AddRecipeCollection-button:active {
+    background-color: #6A4E4D;
+    transform: scale(1);
+}

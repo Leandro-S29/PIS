@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage ingredients</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/Instructions.css">
+    <link rel="icon" href="../images/LogoColored.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">RecipeNest</h1> 
+            <ul class="nav-links">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/Recipes.html">Recipes</a></li>
+                <li><a href="/html/favorites.html">Favorites</a></li>
+                <li><a href="/html/Contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <section class="admin-panel instruction-list-panel">
+            <h2>Manage instructions</h2>
+            <p>View, edit, and delete instructions from the platform.</p>
+            <button class="add-instruction-button"  id="add-instruction-button">+</button>
+            <div class="instruction-list">
+            </div>
+            <button type="submit" class="confirm" id="confirm">Save Changes</button>
+        </section>
+
+        <section class="admin-panel add-instruction-panel hidden">
+            <h2> Add an instruction </h2>
+            <form id="addinstructionForm" class="add-instruction-form"> 
+            <label for="newinstruction"> instruction: </label>
+            <input type="text" id="newinstruction" name="instruction">
+            <button type="submit" class="auth-button"> Add  </button>
+            <button type="button" class="auth-button cancel-button" onclick="cancelAdd()"> cancel </button> 
+            </form>    
+        </section>
+
+
+        <section class="admin-panel edit-instruction-panel hidden">
+            <h2>Edit instruction</h2>
+            <form id="editinstructionForm" class="edit-instruction-form">
+                <label for="editinstruction">instruction:</label>
+                <input type="text" id="editinstruction" name="instruction" required>
+                <button type="submit" class="auth-button">Save Changes</button>
+                <button type="button" class="auth-button cancel-button" onclick="cancelEdit()">Cancel</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 RecipeNest. Admin Panel. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts --> 
+    <script src="../js/selfupdate.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/manageInstructions.js"></script>
+</body>
+</html>

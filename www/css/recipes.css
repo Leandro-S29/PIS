@@ -1,0 +1,111 @@
+.Categories {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.Categories-grid {
+    background-color: #F9D773;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Categories-button {
+    background-color: #FFF5E1;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.Categories-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.Categories-button .nome {
+    margin: 0;
+    color: #5A4E4D;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .Categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .Categories-button {
+        padding: 8px;
+    }
+
+    .Categories-button .nome {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+
+    .Categories-button {
+        padding: 6px;
+    }
+
+    .Categories-button .nome {
+        font-size: 10px;
+    }
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 50px; 
+}
+
+.recipe-card {
+    background-color: #FFF5E1;
+    border-radius: 16px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);    
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.foto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.nome {
+    font-size: 18px;
+    color: #5A4E4D;
+    font-weight: bold;
+    margin: 10px 0px 10px;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

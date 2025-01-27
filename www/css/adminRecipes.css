@@ -1,0 +1,145 @@
+.recipe-list-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.recipe-list {
+    flex: 1;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.edit-recipe-panel,
+.add-recipe-panel {
+    display: block;
+    box-sizing: border-box;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.recipe-card {
+    background: #FFF5E1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.recipe-info {
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.recipe-actions button {
+    background-color: #B56576;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.recipe-actions button:hover {
+    background-color: #8A9A5B;
+}
+
+.hidden {
+    display: none;
+}
+
+.edit-recipe-form,
+.add-recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.edit-recipe-form label,
+.add-recipe-form label {
+    font-size: 14px;
+    color: #5A4E4D;
+    box-sizing: border-box;
+}
+
+.edit-recipe-form input,
+.add-recipe-form input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #B56576;
+    box-sizing: border-box;
+}
+
+.edit-recipe-form .auth-button,
+.add-recipe-form .auth-button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #B56576;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.edit-recipe-form .auth-button:hover,
+.add-recipe-form .auth-button:hover {
+    background-color: #8A9A5B;
+}
+
+.edit-recipe-form .cancel-button,
+.add-recipe-form .cancel-button {
+    background-color: #F9D773;
+    box-sizing: border-box;
+}
+
+.edit-recipe-form .cancel-button:hover,
+.add-recipe-form .cancel-button:hover {
+    background-color: #E8C55C;
+    box-sizing: border-box;
+}
+
+.add-recipe-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-recipe-button:hover {
+    background-color: #45A049;
+    transform: scale(1.05);
+}
+
+.edit-recipe-form .ingred-button,
+.add-recipe-form .ingred-button {
+    background-color: #B56576;
+    box-sizing: border-box;
+}
+
+.edit-recipe-form .ingred-button:hover,
+.add-recipe-form .ingred-button:hover {
+    background-color: #E8C55C;
+    box-sizing: border-box;
+}
+    

@@ -1,0 +1,146 @@
+.collections-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.collection-card {
+    background-color: #FFF5E1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.collection-info {
+    text-align: center;
+    width: 100%;
+}
+
+.collection-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.add-collection {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.add-collection input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #B56576;
+    width: 100%; 
+    max-width: 300px; 
+}
+
+.add-collection button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #B56576;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-collection button:hover {
+    background-color: #8A9A5B;
+}
+
+.collections-section {
+    text-align: center;
+}
+
+.collections-TitlePage {
+    font-size: 24px;
+    color: #5A4E4D;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.collection-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.collection-card button:hover {
+    background-color: #FF4C4C;
+    transform: scale(1.05);
+}
+
+.favorites-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.favorites-TitlePage {
+    font-size: 24px;
+    color: #5A4E4D;
+    margin-bottom: 20px;
+}
+
+.favorites-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    margin-bottom: 70px; 
+}
+
+.favorite-card {
+    background-color: #FFF5E1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favorite-image {
+    width: 100%;
+    max-width: 400px;
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.favorite-info {
+    text-align: center;
+    width: 100%;
+}
+
+.favorite-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.favorite-card button:hover {
+    background-color: #FF4C4C;
+    transform: scale(1.05);
+}
