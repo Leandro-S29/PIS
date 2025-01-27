@@ -38,7 +38,7 @@ Follow these steps to set up RecipeNest locally:
    ```
 
 3. Configure environment variables:
-   - Insert our DataBase inside your Machine with the Script.
+   - Insert our DataBase inside your Machine with the Script (The Views **MUST** be inserted into the DB too).
    - Change the BD Config file to your Machine Host
 
 4. Start the application:
