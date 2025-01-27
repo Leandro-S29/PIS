@@ -6,9 +6,9 @@ Welcome to **RecipeNest** — your one-stop solution for discovering, sharing, a
 
 - **User-Friendly Interface**: An intuitive design to browse, search, and add recipes effortlessly.
 - **Recipe Categories**: Organize recipes by cuisines, meal types, or dietary preferences.
-- **Community Contributions**: Share your favorite recipes and learn from others.
+- **Community Contributions**: Share your favorite recipes and learn from others. (On Going/Not implement yet)
 - **Favorites**: Save and revisit your favorite recipes anytime.
-- **Ingredient-Based Search**: Find recipes based on the ingredients you have on hand.
+- **Ingredient-Based Search**: Find recipes based on your favorite types of food.
 - **Secure Authentication**: Sign up, log in in your profile with ease.
 
 ## Tech Stack
@@ -50,9 +50,9 @@ Follow these steps to set up RecipeNest locally:
 
 ## Usage
 
-1. **Explore Recipes**: Browse through a collection of user-submitted recipes.
-2. **Add Your Recipes**: Share your culinary ideas with the community.
-3. **Search**: Use the search bar to find recipes by name, ingredients, or tags.
+1. **Explore Recipes**: Browse through a collection of submitted recipes. (**Admin Recipes Only** for NOW)
+2. **Add Your Recipes**: Share your culinary ideas with the community. (Not implement) 
+3. **Search**: Use our simple and easy search method, searching by the category of your favorite types of food.
 4. **Save Favorites**: Click the heart icon to save recipes you love.
 
 ## Creators
